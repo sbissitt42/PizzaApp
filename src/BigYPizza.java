@@ -1,9 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 
 public class BigYPizza {
@@ -101,7 +97,8 @@ public class BigYPizza {
                 System.err.println("Image not found: " + imagePath);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("Error loading image: " + e.getMessage());
         }
     }
+
 }
